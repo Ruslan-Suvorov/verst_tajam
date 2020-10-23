@@ -9,8 +9,8 @@ body {
     max-width: 1600px;
 }
 header {
-    background: url(IMG/BACKGROUND_1.jpg) no-repeat center;
-    height: 670px;
+    background: #1c1242 url(IMG/BACKGROUND_1.jpg) no-repeat center top;
+    min-height: 670px;
     text-align: center;
 }
 .content {
@@ -92,6 +92,7 @@ h4 {
 
 .dot-nav {
     margin-top: 140px;
+    margin-bottom: 70px;
     display: flex;
     justify-content: center;
 }
@@ -120,8 +121,6 @@ h4 {
 }
 .rwyl {
     margin: 70px;
-    height: 229px;
-    width: 235px;
 }
 .story p {
     line-height: 22px;
@@ -176,7 +175,7 @@ td, tr {
     padding: 0px 33px;
     height: 250px;
     border: 1px solid #ebebeb;
-    max-width: 250px;
+    width: 250px;
 }
 .team {
     background: #1c1242 url(IMG/BACKGROUND_TEAM.jpg) no-repeat center top;
@@ -364,7 +363,7 @@ input::placeholder {
 }
 .massage::placeholder {
     color: #b0afb3;
-  }
+}
 .clients {
     width: 380px;
 }
@@ -489,7 +488,7 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
     width: 960px;
-    margin: -15px 30px;
+    margin: 0 30px;
 }
 .i4 {
 	text-transform: uppercase;
@@ -510,14 +509,81 @@ input::placeholder {
         text-align: center;
     }
 }
+@media screen and (max-width: 810px) {
+    .about {
+        display: block;
+        height: 800px;
+        text-align: center;
+    }
+    .about .story {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
 @media screen and (max-width: 740px) {
     .nav-menu {
-        display: none;
+        display: block;
     }
     .contact {
         width: 400px;
     }
     .people-say .content {
         margin-top: 20px;
+    }
+    .flex {
+        width: 400px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 620px) {
+    .icon {
+        margin: 27px;
+    }
+}
+@media screen and (max-width: 479px) {
+    .about {
+        height: 1000px;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 270px;
+    }
+    .input {
+        width: 250px;
+    }
+    .massage {
+        width: 230px;
+    }
+    .slider {
+        display: none;
+    }
+    .clients {
+        width: 210px;
+    }
+    .images {
+        height: 720px;
+        width: 210px;
+        flex-wrap: wrap;
+    }
+    .logo {
+        width: 210px;
+        text-align: center;
+    }
+    table tr td {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact {
+        width: 250px;
+    }
+    .rwyl {
+        margin: 20px auto;
+    }
+    .flex {
+        width: 250px;
     }
 }
